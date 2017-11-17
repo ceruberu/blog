@@ -1,13 +1,9 @@
 <template>
-  <div class="main">
     <div class="cv">
       <div class="header">
-        <div>
-          <h3>Duck Yeon Kim</h3>
-          <h5>Email: kduckyeon@gmail.com</h5>
-        </div>
+        Duck Yeon Kim
         <a href="https://github.com/ceruberu" class="link">
-          <img class="github" src="./assets/github.png"/> 
+          <img class="github" src="../assets/github.png"/> 
         </a>
       </div>
       <div class="section">
@@ -35,12 +31,7 @@
           Experience
         </div>
         <div class="sectionBody">
-          <div>
-            <h4>Projects</h4>
-            <ul>
-              <li> Nanglen </li>
-            </ul>
-          </div>
+
         </div>
       </div>
       <div class="section">
@@ -50,7 +41,7 @@
         <div class="sectionBody techstacks">
           <div class="techstack">
             <div class="techstackHeader">
-              <img class="techstackLogo" src="./assets/react.png"/>
+              <img class="techstackLogo" src="../assets/react.png"/>
               React
             </div>
             <ul class="techstackBody">
@@ -61,7 +52,7 @@
           </div>
           <div class="techstack">
             <div class="techstackHeader">
-              <img class="techstackLogo" src="./assets/vue.png"/>
+              <img class="techstackLogo" src="../assets/vue.png"/>
               Vue
             </div>
             <ul class="techstackBody">
@@ -70,7 +61,7 @@
           </div>
           <div class="techstack">
             <div class="techstackHeader">
-              <img class="techstackLogo" src="./assets/redux.png"/>
+              <img class="techstackLogo" src="../assets/redux.png"/>
               Redux
             </div>
             <ul class="techstackBody">
@@ -79,7 +70,7 @@
           </div>
           <div class="techstack">
             <div class="techstackHeader">
-              <img class="techstackLogo" src="./assets/graphql.png"/>
+              <img class="techstackLogo" src="../assets/graphql.png"/>
               Graphql
             </div>
             <ul class="techstackBody">
@@ -88,7 +79,7 @@
           </div>
           <div class="techstack">
             <div class="techstackHeader">
-              <img class="techstackLogo" src="./assets/mongodb.png"/>
+              <img class="techstackLogo" src="../assets/mongodb.png"/>
               MongoDB
             </div>
             <ul class="techstackBody">
@@ -97,7 +88,7 @@
           </div>
           <div class="techstack">
             <div class="techstackHeader">
-              <img class="techstackLogo" src="./assets/docker.png"/>
+              <img class="techstackLogo" src="../assets/docker.png"/>
               Docker
             </div>
             <ul class="techstackBody">
@@ -107,7 +98,7 @@
           </div>
           <div class="techstack">
             <div class="techstackHeader">
-              <img class="techstackLogo" src="./assets/scrapy.png"/>
+              <img class="techstackLogo" src="../assets/scrapy.png"/>
               Scrapy
             </div>
             <ul class="techstackBody">
@@ -143,24 +134,17 @@
           </div>
         </div>
       </div>
-  </div>
+
 </div>
 </template>
 
 <script>
 export default {
-  name: 'portfolio',
+  name: 'cv',
 };
 </script>
 
-<style>
-  body {
-    margin: 0;
-  }
-  .main {
-    background-color: gray;
-    overflow: scroll;
-  }
+<style scoped>
   .cv {
     display: flex;
     flex-direction: column;
@@ -207,8 +191,8 @@ export default {
     margin: 50px;
   }
   .github {
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
   }
   .techstacks {
     flex-wrap: wrap;
@@ -247,18 +231,17 @@ export default {
     flex-direction: column;
     margin-bottom: 10px;
   }
+
   h3 {
     margin: 0;
     margin-bottom: 10px;
   }
+
   h4 {
     margin: 0;
     margin-bottom: 10px;
   }
-  h5 {
-    margin: 0;
-    margin-bottom: 10px;
-  }
+
   ul {
     margin: 0;
     margin-bottom: 10px;
