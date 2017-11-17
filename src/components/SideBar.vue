@@ -5,16 +5,16 @@
       <div class="logoText">Portfolio & Blog</div>
     </div>
     <div class="category">
-      <div> CV </div>
-      <div> Projects </div>
+      <router-link to="cv" class="routerLink"> CV </router-link>
+      <router-link to="project" class="routerLink"> Projects </router-link>
       <hr>
-      <div> Javascript </div>
-      <div> React </div>
-      <div> Vue </div>
-      <div> MongoDB </div>
-      <div> AWS </div>
-      <div> Docker </div>
-      <div> Algorithm </div>
+      <router-link to="ิblog" class="routerLink"> Javascript </router-link>
+      <router-link to="ิblog" class="routerLink"> React </router-link>
+      <router-link to="ิblog" class="routerLink"> Vue </router-link>
+      <router-link to="ิblog" class="routerLink"> MongoDB </router-link>
+      <router-link to="ิblog" class="routerLink"> AWS </router-link>
+      <router-link to="ิblog" class="routerLink"> Docker </router-link>
+      <router-link to="ิblog" class="routerLink"> Algorithm </router-link>
     </div>
   </div>
 </template>
@@ -62,15 +62,25 @@ export default {
   margin-left: 15px;
   margin-right: 15px;
 }
-.category div {
+.routerLink {
+  box-sizing: border-box;
   display: flex;
   flex: 0 0 30px;
   align-items: center;
   justify-content: center;
-}
-.category div:hover {
-  border-right: 4px solid #6bff8d;
-  margin-left: 4px;
+  text-decoration: none;
+  color: black;
   cursor: pointer;
+  transition: all 0.5s ease;
+}
+.routerLink:hover {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.exactActive {
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-right: 4px solid #63ff38;
+  /* margin-left: 4px; */
 }
 </style>

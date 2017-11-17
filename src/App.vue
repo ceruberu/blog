@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <SideBar/>
-    <router-view/>
+    <div id="main">
+      <div class="container">
+        <router-view/>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -21,11 +25,17 @@ body {
   margin: 0px;
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */
+  /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale; */
   display: flex;
+  height: 100vh;
+}
+#main {
+  display: flex;
+  flex: 5;
+  background-color: lightgrey;
+  overflow-y: scroll;
   height: 100vh;
 }
 </style>

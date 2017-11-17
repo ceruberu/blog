@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Main from '@/components/Main';
+import CV from '@/components/CV';
 
 Vue.use(Router);
 
@@ -12,5 +13,12 @@ export default new Router({
       name: 'Main',
       component: Main,
     },
+    {
+      path: '/cv',
+      name: 'Resume',
+      component: CV,
+    },
   ],
+  linkActiveClass: 'active',
+  linkExactActiveClass: 'exactActive',
 });
